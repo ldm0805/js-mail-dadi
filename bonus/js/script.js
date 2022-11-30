@@ -15,9 +15,10 @@ button.addEventListener('click', function(){
     //Effettuare il controllo tramite la variabile booleana
     let bool = false;
 
-    for(let i=0; i<mail_list.length; i++){
+    for(let i=0; i < mail_list.length; i++){
 
     if (mail_list[i] === mail){
+        
         bool = true;   
     }
     }
