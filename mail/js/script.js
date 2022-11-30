@@ -10,6 +10,8 @@ let mail = prompt('Inserisci la tua email');
 
 let bool = false;
 
+
+
 for(let i=0; i<mail_list.length; i++){
 
     if (mail_list[i] == mail){
