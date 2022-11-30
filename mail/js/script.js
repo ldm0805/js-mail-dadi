@@ -16,6 +16,7 @@ for(let i=0; i<mail_list.length; i++){
         bool = true;   
     }
     }
+    
     //3.1 SE la mail risulta nella lista, ALLORA il messaggio sarà "Complimenti hai effettuato l'accesso!"
         if (bool){
             console.log(`Complimenti hai effettuato l'accesso!`)
