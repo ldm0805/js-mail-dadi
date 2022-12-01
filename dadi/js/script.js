@@ -1,6 +1,5 @@
 // Gioco dei dadi Generare un numero random da 1 a 6, sia per il giocatore sia per il computer. Stabilire il vincitore, in base a chi fa il punteggio più alto.
 
-
 // 1. Generare un numero casuale per il giocatore;
 let n_player = Math.floor( Math.random() * 6) + 1;
 // 2. Generare un numero casuale per il computer;
@@ -25,3 +24,4 @@ else if (n_computer > n_player){
 else{
     console.log('Il giocatore ha vinto');
 }
+

@@ -25,6 +25,7 @@ button.addEventListener('click', function(){
 
     // SE la mail risulta nella lista, ALLORA il messaggio sarà "Complimenti hai effettuato l'accesso!"
         if (bool){
+
             document.getElementById('result').innerHTML ="Complimenti hai effettuato l'accesso!";
         }
 
