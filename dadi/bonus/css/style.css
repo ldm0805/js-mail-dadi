@@ -191,7 +191,7 @@ body {
   #dice[data-side="2"].roll {
     transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
   }
-  
+
   #dice[data-side="3"].roll {
     transform: rotateX(0deg) rotateY(90deg) rotateZ(0deg);
   }

@@ -27,14 +27,58 @@
 
 
 let n_player
+let n_player_2
+
+
+let flag = 0;
+let game = 0;
+let game_two = 0;
+let game_three = 0;
+let counter = 0;
 document.getElementById('pull_dice').innerHTML ='è il tuo turno';
 let button = document.getElementById("dicebutton");
 button.addEventListener("click", rollDice);
-
 function rollDice() {
-  /*Math.floor(Math.random() * (max - min + 1)) + min*/
-  n_player = Math.floor( Math.random() * 6) + 1;
+  
+  if(counter < 3){
 
-  /* Add a class of "roll" to #dice after it's clicked, so that the transform properties come to life: */
-  dice.classList.toggle("roll");
-}
+    n_player = Math.floor( Math.random() * 6) + 1;
+    document.getElementById('numero').innerHTML = `Il numero del giocatore è ${n_player}`;
+    
+    n_player_2 = Math.floor( Math.random() * 6) + 1;
+    document.getElementById('numero_2').innerHTML = `Il numero del pc è ${n_player_2}`;
+
+    if(n_player > n_player_2){
+        game++
+        console.log('il valore del giocatore '+' ' + game)
+      }
+
+      else if(n_player < n_player_2){
+        game_two++ 
+        console.log('il valore del pc è'+' ' + game_two)
+      }
+      
+      else{
+        game_three++ 
+        console.log('il valore del pareggio è'+' ' + game_three)
+      }
+      counter++
+      /* Add a class of "roll" to #dice after it's clicked, so that the transform properties come to life: */
+      dice.classList.toggle("roll");
+    }
+
+    if(counter == 3){
+
+     if(game == game_two){
+       document.getElementById('vincita').innerHTML ='Pareggio';
+     }
+
+     else if(game < game_two){
+      document.getElementById('vincita').innerHTML ='Il pc ha vinto';
+     }
+
+     else{
+      document.getElementById('vincita').innerHTML ='Il giocatore ha vinto';
+     }
+    }
+  }
