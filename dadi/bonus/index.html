@@ -9,9 +9,12 @@
     <title>Esercizio: js-dadi</title>
 </head>
 <body>
-  <div class="row_dice d-flex justify-content-around align-items-center">
-    <div id="pull_dice" class="h1 text-white"></div>
-        <div class="col_dice">
+  <div class="container_all">
+    <span class="text-white">*Questo dado è qui solo per bellezza.</span>       
+    <div class="row_dice mt-4">
+      <div class="col_dice"> 
+        <div id="pull_dice" class="h1 text-white"></div>
+          <div class="col_dice">
             <div id="dice" data-side="1">
                 <div class="sides side-1">
                   <span class="dot dot-1"></span>
@@ -47,20 +50,28 @@
                   <span class="dot dot-6"></span>
                 </div>
               </div>
-              <div id="dicebutton" class="row_result">
-                  <button type="button" class="btn btn-secondary">Tira il dado</button>
-                  <div id="numero" class="col text-white">
-                  </div>
-                  <div id="numero_2" class="col text-white">
-                  </div>
-                  <div id="vincita" class="col text-white">
-                  </div>
-              </div>
+            </div>
+          </div>
         </div>
+       
+
+          <div class="row_result mt-5">
+            <div class="col_result text-center">    
+              <div id="dicebutton">
+                <button type="button" class="btn btn-secondary mb-3">Tira il dado</button>
+              <div id="numero" class="col">
+              </div>
+              <div id="numero_2" class="col">
+              </div>
+              <div id="result_game" class="col">
+              </div>
+            </div>
+          </div>
+          </div>
+
+          
+              
   </div>
-
-
-
     <script type="text/javascript" src="./js/script.js"></script>
 </body>
 </html>

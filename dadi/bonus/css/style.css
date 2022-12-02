@@ -3,8 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
-    background: linear-gradient(black, #aeb8fe);
+    background: linear-gradient(#041C32,#04293A,#13597c);
     /* display: flex; */
     width: 100%;
     height: 100vh;
@@ -23,10 +24,31 @@ body {
     transition: transform 1.5s ease;
   }
 
-.row_dice{
+  .container_all{
     height: 100vh;
-}
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
   
+  #numero.col, #numero_2.col{
+    color: white;
+    font-size: 1.2em;
+    font-weight: 500;
+  }
+
+  #result_game.col{
+    color: greenyellow;
+    font-size: 3em;
+    font-weight: 600;
+  }
+
+  .row_result{
+    height: 10em;
+  }
+
   /* Adding a little transparent shade near the dice...just because I was having fun messing with the Z axis. */
   .shade {
     border-radius: 50%;

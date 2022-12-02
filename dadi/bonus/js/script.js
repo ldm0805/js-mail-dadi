@@ -35,7 +35,6 @@ let game = 0;
 let game_two = 0;
 let game_three = 0;
 let counter = 0;
-document.getElementById('pull_dice').innerHTML ='è il tuo turno';
 let button = document.getElementById("dicebutton");
 button.addEventListener("click", rollDice);
 function rollDice() {
@@ -50,17 +49,14 @@ function rollDice() {
 
     if(n_player > n_player_2){
         game++
-        console.log('il valore del giocatore '+' ' + game)
       }
 
       else if(n_player < n_player_2){
         game_two++ 
-        console.log('il valore del pc è'+' ' + game_two)
       }
       
       else{
         game_three++ 
-        console.log('il valore del pareggio è'+' ' + game_three)
       }
       counter++
       /* Add a class of "roll" to #dice after it's clicked, so that the transform properties come to life: */
@@ -70,15 +66,15 @@ function rollDice() {
     if(counter == 3){
 
      if(game == game_two){
-       document.getElementById('vincita').innerHTML ='Pareggio';
+       document.getElementById('result_game').innerHTML ='Pareggio';
      }
 
      else if(game < game_two){
-      document.getElementById('vincita').innerHTML ='Il pc ha vinto';
+      document.getElementById('result_game').innerHTML ='Il giocatore virtuale ha vinto.';
      }
 
      else{
-      document.getElementById('vincita').innerHTML ='Il giocatore ha vinto';
+      document.getElementById('result_game').innerHTML ='Il giocatore umano ha vinto.';
      }
     }
   }
