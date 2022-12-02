@@ -42,10 +42,10 @@ function rollDice() {
   if(counter < 3){
 
     n_player = Math.floor( Math.random() * 6) + 1;
-    document.getElementById('numero').innerHTML = `Il numero del giocatore è ${n_player}`;
+    document.getElementById('numero').innerHTML = `Il numero del giocatore è ${n_player}.`;
     
     n_player_2 = Math.floor( Math.random() * 6) + 1;
-    document.getElementById('numero_2').innerHTML = `Il numero del pc è ${n_player_2}`;
+    document.getElementById('numero_2').innerHTML = `Il numero del pc è ${n_player_2}.`;
 
     if(n_player > n_player_2){
         game++
@@ -66,7 +66,7 @@ function rollDice() {
     if(counter == 3){
 
      if(game == game_two){
-       document.getElementById('result_game').innerHTML ='Pareggio';
+       document.getElementById('result_game').innerHTML ='Pareggio.';
      }
 
      else if(game < game_two){

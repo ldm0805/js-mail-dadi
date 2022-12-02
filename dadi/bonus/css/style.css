@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -14,6 +16,12 @@ body {
     overflow: hidden;
     /* Affect the distance between the Z plane and the user: */
     perspective: 1000px;
+  }
+
+  #dicebutton .btn-primary{
+    font-weight: bold;
+    background-color: #041C32;
+    border: 5px solid #041C32;
   }
   
   #dice {
@@ -41,7 +49,7 @@ body {
 
   #result_game.col{
     color: greenyellow;
-    font-size: 3em;
+    font-size: 2.3em;
     font-weight: 600;
   }
 
@@ -49,17 +57,7 @@ body {
     height: 10em;
   }
 
-  /* Adding a little transparent shade near the dice...just because I was having fun messing with the Z axis. */
-  .shade {
-    border-radius: 50%;
-    opacity: 0.5;
-    position: absolute;
-    background: linear-gradient(linen, gray, linen);
-    width: 100%;
-    height: 100%;
-    transform: translateZ(145px);
-  }
-  
+
   .sides {
     border-radius: 15px;
     background-color: linen;
@@ -73,7 +71,7 @@ body {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background: radial-gradient(linen, black, linen);
+    background: radial-gradient(#4b66dd80,#064c6dad,#062331);
     transform: translate(-50%, -50%);
   }
   
