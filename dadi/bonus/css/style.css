@@ -20,8 +20,12 @@ body {
 
   #dicebutton .btn-primary{
     font-weight: bold;
-    background-color: #041C32;
+    background-color: rgba(4, 28, 50, 0.74);
     border: 5px solid #041C32;
+  }
+  
+  #dicebutton .btn-primary:hover{
+    background-color: #041C32;
   }
   
   #dice {
@@ -56,7 +60,6 @@ body {
   .row_result{
     height: 10em;
   }
-
 
   .sides {
     border-radius: 15px;
